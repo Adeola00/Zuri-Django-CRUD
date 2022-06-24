@@ -30,5 +30,11 @@ class PostUpdateView(UpdateView):
 
 class PostDeleteView(DeleteView):
     model = Post
+<<<<<<< HEAD
     success_url = reverse_lazy("blog:all")
     template_name = "blog/post_confirm_delete.html"
+=======
+    fields = "__all__"
+    success_url  = reverse_lazy("blog:all")
+    template_name = "post_confirm_delete.html"
+>>>>>>> 7f647b9cc6e7508fdb52dd4f6495fb691c41af60
